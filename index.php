@@ -1,6 +1,4 @@
 <?php
-ini_set('date.timezone', 'Asia/Tokyo');
-
 try {
     // DB へ接続する
     $pdo = new PDO('mysql:host=localhost;dbname=bbs', 'root');
