@@ -49,7 +49,7 @@ if ( ! empty($_POST) ) {
     <link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <style>
       body { margin-top: 4em; font-family: 'Open Sans Condensed', sans-serif; }
-      input, textatrea, .btn { font-family: 'Open Sans Condensed', sans-serif; }
+      input, textarea, .btn { font-family: 'Open Sans Condensed', sans-serif; }
       .footer { margin-top: 4em; padding: 2em 0; border-top: 1px solid #e5e5e5; background-color: #f5f5f5; }
     </style>
   </head>
