@@ -75,7 +75,7 @@ if ( ! empty($_POST) ) {
         <div class="control-group">
           <label class="control-label" for="address">Address</label>
           <div class="controls">
-            <input class="input-xlarge" type="email" value="" id="address" name="name" />
+            <input class="input-xlarge" type="email" value="" id="address" name="address" />
           </div>
         </div>
 
