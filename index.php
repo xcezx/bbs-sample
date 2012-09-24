@@ -1,7 +1,14 @@
 <?php
 try {
     // DB へ接続する
-    $pdo = new PDO('mysql:host=localhost;dbname=bbs', 'root');
+    $dsn = sprintf('%s:host=%s;dbname=%s',
+        'mysql',
+        isset($_SERVER['DB1_HOST']) ? $_SERVER['DB1_HOST'] : 'localhost',
+        isset($_SERVER['DB1_NAME']) ? $_SERVER['DB1_NAME'] : 'bbs'
+    );
+    $db_user = isset($_SERVER['DB1_USER']) ? $_SERVER['DB1_USER'] : 'root';
+    $db_pass = isset($_SERVER['DB1_PASS']) ? $_SERVER['DB1_PASS'] : null;
+    $pdo = new PDO($dsn, $db_user, $db_pass);
     // DB への操作に失敗したときなどにエラーを表示させるためのおまじない
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (Exception $e) {
