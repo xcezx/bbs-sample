@@ -1,4 +1,7 @@
 <?php
+// PHP が扱うタイムゾーンを Asia/Tokyo に設定する
+ini_set('date.timezone', 'Asia/Tokyo');
+
 try {
     // DB へ接続する
     $dsn = sprintf('%s:host=%s;dbname=%s',
